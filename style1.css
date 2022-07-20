@@ -8,13 +8,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 /*------------------------------- 
 top banner design section
 -----------------------------  */
 .top-banner{
-    /* min-width: 1025px; */
+    /* max-width: 1025px; */
     background-color: #161616;
     border-radius: 30px;
     margin: 40px 120px;
@@ -194,7 +192,9 @@ right side design
     width: 24px;
     height: 24px;
 }
-
+.viewall-button{
+    display: none;
+}
 /*--------------------
 footer design
 ---------------------*/
