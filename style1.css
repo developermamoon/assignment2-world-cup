@@ -517,18 +517,8 @@ left side design
             text-align: center;
         }
     
-        @keyframes colored {
-            from {
-                background-color: red;
-            }
-    
-            to {
-                background-color: rgb(25, 83, 209);
-            }
-        }
-    
         .viewall-button:hover {
-            animation-name: colored;
+            animation-name: colors;
             animation-duration: 1.5s;
             animation-timing-function: ease-in-out;
             animation-direction: alternate;
