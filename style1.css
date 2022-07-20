@@ -251,13 +251,13 @@ footer .links a{
     font-size: 25px;
 }
 
-/*-----------------------
-mobile device responsive
----------------------*/
+/*---------------------------------------------------------------------------------------------
+                                                mobile device responsive
+ ------------------------------------------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .main-body{
-        margin: 10px 20px 0 20px;
+        margin: 10px 20px 25px 20px;
     }
     /*------------
     top banner design
@@ -296,7 +296,7 @@ lower body design
         flex-direction: column;
         justify-content: center;
         gap: 20px;
-        margin: 15px 20px ;
+        margin: 15px 10px ;
     }
 /*---------------------
 left side design
@@ -331,13 +331,55 @@ left side design
         width: 180px;
         border: 1px solid rgba(128, 128, 128, 0.514);
     }
-    .right-side-article-container{
-        display: none;
+/*---------------------
+    right side design
+-----------------------*/
+    .right-side-article-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
+
 /*------------
 footer design
 --------------------*/
-    footer{
-        display: none;
-    }
+   footer {
+       background-color: #161616;
+       text-align: center;
+       padding: 10px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   footer h3 {
+       color: white;
+       font-size: 30px;
+       font-weight: 600;
+       margin: 20px;
+   }
+
+   hr {
+        width: 100%;
+        border: 1px solid rgba(128, 128, 128, 0.514);
+   }
+
+   footer .links {
+       margin-top: 20px;
+       margin-bottom: 20px;
+       flex-direction: column;
+   }
+
+   footer .links a {
+       color: #B9B9B9;
+       margin: 0;
+       padding: 20px 100px;
+       text-decoration: none;
+   }
+
+   .social-media-icons {
+       display: flex;
+       margin-bottom: 20px;
+   }
+
 }
