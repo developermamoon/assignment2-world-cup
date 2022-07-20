@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto&display=swap');
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -45,6 +48,11 @@ top banner design section
     color: white;
     font-size: 16px;
     display: inline-block;
+    transition: background-color 1s ease-in-out;
+}
+
+.watch-live-button:hover{
+    background-color: rgb(25, 83, 209);
     
 }
 .image-area{
@@ -99,6 +107,10 @@ left side design
 #color-design{
     background-color: red;
     color: white;
+    transition: background-color 1s ease-in-out;
+}
+#color-design:hover{
+    background-color: rgb(25, 83, 209);
 }
 
 /*---------------------
