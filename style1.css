@@ -390,6 +390,9 @@ footer design
        display: flex;
        margin-bottom: 20px;
    }
+   .viewall-button{
+    display: none;
+   }
 
 }
 /*---------------------------------------------------------------------------------------------
@@ -489,6 +492,7 @@ left side design
         width: 100%;
         border: 1px solid rgba(128, 128, 128, 0.514);
     }
+
 /*---------------------
     right side design
 -----------------------*/
