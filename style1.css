@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto&display=swap');
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body{
     font-family: 'Poppins', sans-serif;
 }
+.main-body{
+    /* min-width: 1025px; */
+}
+/*------------------------------- 
+top banner design section
+-----------------------------  */
 .top-banner{
     /* min-width: 1025px; */
     background-color: #161616;
@@ -53,4 +55,39 @@ body{
     height: auto;
     padding: 0 30px;
     padding-top: 30px;
+}
+
+/*------------------------------- 
+lower body part design section
+-----------------------------  */
+
+.lower-body{
+    display: flex;
+    justify-content: center;
+}
+.left-side-button-container{
+    width: 312px;
+    height: 312px;
+    background-color: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.left-side-button-container a{
+    text-decoration: none;
+    color: #161616;
+    background-color: white;
+    margin: 15px 0;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+#color-design{
+    background-color: red;
+    color: white;
 }
