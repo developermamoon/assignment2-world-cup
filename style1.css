@@ -48,11 +48,22 @@ top banner design section
     color: white;
     font-size: 16px;
     display: inline-block;
-    transition: background-color 1s ease-in-out;
+}
+@keyframes colors{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: rgb(25, 83, 209);
+    }
 }
 
 .watch-live-button:hover{
-    background-color: rgb(25, 83, 209);
+    animation-name: colors;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
     
 }
 .image-area{
@@ -104,13 +115,20 @@ left side design
     width: 209px;
     height: 64px;
 }
+.left-side-button-container a:hover {
+    background-color: red;
+    color: white;
+}
 #color-design{
     background-color: red;
     color: white;
-    transition: background-color 1s ease-in-out;
 }
 #color-design:hover{
-    background-color: rgb(25, 83, 209);
+    animation-name: colors;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
 }
 
 /*---------------------
@@ -144,6 +162,10 @@ right side design
     border-radius: 5px;
     border: 1px solid black;
     padding: 2px 10px ;
+}
+.text-part button:hover{
+    background-color: red;
+        color: white;
 }
 .text-part >p{
     font-weight: 600;
