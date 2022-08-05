@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -12,17 +13,23 @@ body{
 top banner design section
 -----------------------------  */
 .top-banner{
+    height: 75vh;
     background-color: #161616;
     border-radius: 30px;
     margin: 40px 120px;
     display: flex;
-    align-items: center;
-    padding-left: 106px;
-    padding-top: 23px;
+    justify-content: center;
     
 }
 .text-area{
     color: white;
+    width: 60%;
+    height: 100%;
+    padding: 40px 0;
+    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 .text-area h1 {
@@ -37,7 +44,6 @@ top banner design section
     margin-bottom: 22px;
 }
 .watch-live-button{
-    /* font-family: 'Roboto', sans-serif; */
     background-color: #DD0000;
     border-radius: 5px;
     padding: 10px 25px;
@@ -45,6 +51,7 @@ top banner design section
     color: white;
     font-size: 16px;
     display: inline-block;
+    width: 170px
 }
 @keyframes colors{
     from{
@@ -64,13 +71,13 @@ top banner design section
     
 }
 .image-area{
-    display: flex;
+    width: 40%;
+    height: 100%;
 }
 .image-area img{
-    width: 458px;
-    height: auto;
-    padding: 0 30px;
-    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 40px 30px 0 30px;
 }
 
 /*------------------------------- 
@@ -110,7 +117,6 @@ left side design
     padding: 12px 0;
     border-radius: 5px;
     width: 209px;
-    /* height: 64px; */
 }
 .left-side-button-container a:hover {
     background-color: red;
@@ -226,7 +232,7 @@ footer .links a{
     text-decoration: none;
 }
 .social-media-icons{
-    display: flex;   
+    display: flex; 
 }
 .social-media-icons a{
     text-decoration: none;
@@ -238,7 +244,7 @@ footer .links a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
     border-radius: 100%;
 }
 .social-media-icons a:hover{
@@ -247,7 +253,7 @@ footer .links a{
     
 }
 .social-media-icons i{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /*---------------------------------------------------------------------------------------------
@@ -263,29 +269,35 @@ footer .links a{
     --------------------*/
     .top-banner{
         flex-direction: column;
-        width: 100%;
+        align-items: center;
+        /* width: 100%; */
+        height: 100vh;
         margin: 0;
         border-radius: 10px;
         text-align: center;
-        padding: 0;
+        padding: 10px;
+        padding-bottom: 0;
     }
     .text-area{
         padding: 20px 20px 10px 20px;
+        width: 100%;
+        align-items: center;
     }
     .text-area h1{
-        /* font-size: 26px; */
         font-size: 8vw;
         line-height: 50px;
     }
     .text-area p{
-        /* font-size: 10px; */
         font-size: 2.5vw;
     }
     .image-area{
         padding: 0 20px 0 20px;
+        width: 100%;
+        height: 100%;
     }
     .top-banner img{
         width: 100%;
+        height: 100%;
         padding: 30px 0 0 0;
     }
 
@@ -406,24 +418,13 @@ footer design
     top banner design
     --------------------*/
     .top-banner {
-        width: 100%;
-        background-color: #161616;
-        border-radius: 30px;
         margin: 0;
-        display: flex;
-        align-items: center;
-        padding-left: 0px;
-        padding-top: 0;
-        align-items: stretch;
-        box-sizing: border-box;
 
     }
     
         .text-area {
-            color: white;
-            padding: 30px 0 30px 30px;
-            box-sizing: border-box;
-    
+            padding-left: 40px;
+            width: 50%;
         }
     
         .text-area h1 {
@@ -438,22 +439,21 @@ footer design
             font-size: 1.7vw;
             margin-bottom: 15px;
         }
+        .watch-live-button{
+            width: 100px;
+            padding: 20px 30px;
+        }
         .image-area {
-            display: flex;
-            width: 100%;
-            padding: 40px;
-            padding-bottom: 0;
-            align-items: stretch;
+            /* display: flex; */
+            width: 50%;
+            height: 100%;
+
         }
 
         .image-area img {
-            width: 110%;
-            height: auto;
-            /* padding: 0 38px; */
-            padding: 0 ;
-            /* padding-top: 73px; */
-            /* padding-top: 100px; */
-            /* vertical-align: bottom; */
+            width: 100%;
+            height: 100%;
+            padding: 40px 20px 0 5px ;
         }
         .watch-live-button {
             background-color: #DD0000;
@@ -519,9 +519,7 @@ left side design
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    .image-area{
-            padding: 15px 45px 0px 10px;
-    }
+    
     .article .thumbnail img {
         width: 100%;
         height: 200px;
